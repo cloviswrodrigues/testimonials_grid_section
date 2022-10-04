@@ -1,3 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.grid__item {
+  background-color: hsl(263deg, 55%, 52%);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.grid .profile {
+  display: flex;
+  align-items: center;
+}
+.grid .profile__img {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  border: 2px solid #9269d3;
+}
+.grid .profile__name {
+  font-size: 1.4rem;
+}
+.grid__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+}
+.grid__paragraph {
+  font-size: 1.4rem;
+}
 
 /*# sourceMappingURL=style.css.map */
