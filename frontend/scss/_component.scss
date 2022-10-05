@@ -1,34 +1,105 @@
 .grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 225px));
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "item-1 item-1 item-2 item-5"
+        "item-3 item-4 item-4 item-5";
+    justify-content: center;
+    align-content: center;
+    gap: 2.5rem;
 
     &__item {
         background-color: $color-moderate-violet;
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 3rem;
+    }
+
+    .item-1 {        
+        background-color: $color-moderate-violet;
+        grid-area: item-1;
+    }
+
+    .item-2 {        
+        background-color: $color-very-dark-grayish-blue;
+        grid-area: item-2;
+    }
+
+    .item-3 {
+        background-color: $color-white;
+        grid-area: item-3;
+    }
+
+    .item-4 {
+        background-color: $color-very-dark-blackish-blue;
+        grid-area: item-4;
+    }
+
+    .item-5 {
+        background-color: $color-white;
+        grid-area: item-5;
     }
 
     .profile {
         display: flex;
         align-items: center;
+        margin-bottom: 1.5rem;
+        color: $color-white;
 
         &__img {
-            width: 4rem;
+            width: 3.5rem;
             border-radius: 50%;
             margin-right: 1.5rem;
-            border: 2px solid lighten($color-moderate-violet, 10%);
         }
 
         &__name {
             font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: .3rem;
+        }
+
+        span {
+            color: $color-light-gray;
         }
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 600;
+        margin-bottom: 2rem;
         color: $color-white;
+        line-height: 2.5rem;
     }
 
     &__paragraph {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        color: $color-light-gray;
+    }
+
+    .item-1,
+    .item-4 {
+
+        .profile__img {
+            border: 2px solid lighten($color-moderate-violet, 10%);
+        }
+    }
+
+    .item-3,
+    .item-5 {
+        .grid {
+            &__title {
+                color: $color-very-dark-blackish-blue;
+            }
+
+            &__paragraph {
+                color: $color-very-dark-grayish-blue;
+            }
+        }
+
+        .profile__name {
+            color: $color-very-dark-blackish-blue;
+        }
     }
 }
