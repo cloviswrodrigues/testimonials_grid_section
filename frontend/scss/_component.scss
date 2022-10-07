@@ -18,7 +18,8 @@
     }
 
     .item-1 {        
-        background-color: $color-moderate-violet;
+        background: url(../images/bg-pattern-quotation.svg) no-repeat 290px 0px
+            ,$color-moderate-violet;
         grid-area: item-1;
     }
 

@@ -31,7 +31,7 @@ body {
   padding: 3rem;
 }
 .grid .item-1 {
-  background-color: hsl(263deg, 55%, 52%);
+  background: url(../images/bg-pattern-quotation.svg) no-repeat 290px 0px, hsl(263deg, 55%, 52%);
   grid-area: item-1;
 }
 .grid .item-2 {
