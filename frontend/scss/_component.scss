@@ -103,6 +103,12 @@
             color: $color-very-dark-blackish-blue;
         }
     }
+
+    .item-3,
+    .item-4,
+    .item-5 {
+        box-shadow: 10px 25px 50px 0px rgba($color-very-dark-blackish-blue, .2);   
+    }
 }
 
 .attribution { 

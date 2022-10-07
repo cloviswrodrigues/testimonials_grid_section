@@ -96,6 +96,11 @@ body {
 .grid .item-5 .profile__name {
   color: hsl(219deg, 29%, 14%);
 }
+.grid .item-3,
+.grid .item-4,
+.grid .item-5 {
+  box-shadow: 10px 25px 50px 0px rgba(25, 33, 46, 0.2);
+}
 
 .attribution {
   position: absolute;
