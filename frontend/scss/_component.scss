@@ -2,7 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 225px));
+    grid-template-columns: repeat(4, minmax(100px, 245px));
     grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "item-1 item-1 item-2 item-5"
@@ -18,7 +18,7 @@
     }
 
     .item-1 {        
-        background: url(../images/bg-pattern-quotation.svg) no-repeat 290px 0px
+        background: url(../images/bg-pattern-quotation.svg) no-repeat 330px 0px
             ,$color-moderate-violet;
         grid-area: item-1;
     }
@@ -67,7 +67,7 @@
     }
 
     &__title {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         font-weight: 600;
         margin-bottom: 2rem;
         color: $color-white;
