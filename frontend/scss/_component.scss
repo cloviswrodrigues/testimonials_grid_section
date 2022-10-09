@@ -1,6 +1,6 @@
 .grid {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 225px));
     grid-template-rows: repeat(2, auto);
@@ -108,6 +108,22 @@
     .item-4,
     .item-5 {
         box-shadow: 10px 25px 50px 0px rgba($color-very-dark-blackish-blue, .2);   
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        padding: 6rem 2.5rem;
+        grid-template-columns: 310px;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+            "item-1"
+            "item-2"
+            "item-3"
+            "item-4"
+            "item-5";
+
+        .item-1 {        
+            background-position: 180px 0px;
+        }
     }
 }
 

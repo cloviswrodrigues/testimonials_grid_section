@@ -12,11 +12,12 @@ html {
 
 body {
   background-color: hsl(210deg, 46%, 95%);
+  position: relative;
 }
 
 .grid {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 225px));
   grid-template-rows: repeat(2, auto);
@@ -100,6 +101,17 @@ body {
 .grid .item-4,
 .grid .item-5 {
   box-shadow: 10px 25px 50px 0px rgba(25, 33, 46, 0.2);
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    padding: 6rem 2.5rem;
+    grid-template-columns: 310px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5";
+  }
+  .grid .item-1 {
+    background-position: 180px 0px;
+  }
 }
 
 .attribution {

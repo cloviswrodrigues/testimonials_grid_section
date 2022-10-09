@@ -3,9 +3,10 @@ $color-very-dark-grayish-blue: hsl(217, 19%, 35%);
 $color-very-dark-blackish-blue: hsl(219, 29%, 14%);
 $color-white: hsl(0, 0%, 100%);
 
-
 $color-light-gray: hsl(0, 0%, 81%);
 $color-light-grayish-blue: hsl(210, 46%, 95%);
+
+$break-mobile: 800px;
 
 * {
     margin: 0;
@@ -21,4 +22,5 @@ html {
 
 body {
     background-color: $color-light-grayish-blue;
+    position: relative
 }
